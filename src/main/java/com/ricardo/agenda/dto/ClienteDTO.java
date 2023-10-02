@@ -39,12 +39,35 @@ public class ClienteDTO {
 	private String dataNascimento;
 	
 	private Set<String> telefones = new HashSet<>(); 
-
+	
 	private List<Endereco> enderecos = new ArrayList<>();
 	
 
 	public ClienteDTO() {
 	}
+
+	
+	
+
+//	public ClienteDTO(Integer id,
+//			 String primeiroNome,
+//			 String ultimoNome,
+//			 String email,
+//			 String cpf,
+//			 String dataNascimento, Set<String> telefones,
+//			List<Endereco> enderecos) {
+//		super();
+//		this.id = id;
+//		this.primeiroNome = primeiroNome;
+//		this.ultimoNome = ultimoNome;
+//		this.email = email;
+//		this.cpf = cpf;
+//		this.dataNascimento = dataNascimento;
+//		this.telefones = telefones;
+//		this.enderecos = enderecos;
+//	}
+
+
 
 
 	public ClienteDTO(Cliente entity) {
@@ -128,6 +151,7 @@ public class ClienteDTO {
 	public void setTelefones(Set<String> telefones) {
 		this.telefones = telefones;
 	}
+	
 
 
 	public List<Endereco> getEnderecos() {
